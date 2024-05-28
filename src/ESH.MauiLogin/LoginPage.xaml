@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ESH.MauiLogin.LoginPage"
+             Title="LoginPage">
+    <VerticalStackLayout  Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+        <Frame Padding="10">
+            <Entry x:Name="txtUsuario"  Placeholder="Usuario" VerticalOptions="Center">
+
+            </Entry>
+        </Frame>
+        <Frame Padding="10">
+            <Entry x:Name="txtSenha"  Placeholder="Senha" IsPassword="True">
+
+            </Entry>
+        </Frame>
+
+        <HorizontalStackLayout HorizontalOptions="End">
+            <CheckBox x:Name="chkMantemLogado"></CheckBox>
+            <Label Text="Manter logado" VerticalOptions="Center"></Label>
+        </HorizontalStackLayout>
+        <Button x:Name="btnLogar" Text="Entrar" WidthRequest="280" Clicked="btnLogar_Clicked">
+
+        </Button>
+
+    </VerticalStackLayout>
+
+</ContentPage>
